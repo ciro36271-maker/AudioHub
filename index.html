@@ -31,19 +31,221 @@
           <!-- Productos destacados  -->
            <section id="productos">
             <h2>Productos destacados</h2>
-           </section>
+           
+          <div class="productos-container">
+
+        <article class="producto-card">
+            <img
+                src="assets/img/soundcore-liberty-5.jpg"
+                alt="Auriculares Soundcore Liberty 5"
+            >
+
+            <div class="producto-info">
+                <h3>Soundcore Liberty 5</h3>
+
+                <p>
+                    Auriculares inalámbricos con cancelación
+                    de ruido para disfrutar de tu música.
+                </p>
+
+                <p class="precio">$150.000</p>
+
+                <a href="#contacto" class="boton-producto">
+                    Consultar producto
+                </a>
+            </div>
+        </article>
+
+        <!-- Redmi Buds 6 -->
+<article class="producto-card">
+    <img
+        src="assets/img/redmi-buds-6.jpg"
+        alt="Auriculares Redmi Buds 6"
+    >
+
+    <div class="producto-info">
+        <h3>Redmi Buds 6</h3>
+        <p>Auriculares inalámbricos para escuchar música todos los días.</p>
+        <p class="precio">$65.000</p>
+        <a href="#contacto" class="boton-producto">
+            Consultar producto
+        </a>
+    </div>
+</article>
+
+<!-- Beats Studio Pro -->
+<article class="producto-card">
+    <img
+        src="assets/img/beats-studio-pro.jpg"
+        alt="Auriculares Beats Studio Pro"
+    >
+
+    <div class="producto-info">
+        <h3>Beats Studio Pro</h3>
+        <p>Auriculares de diadema con un diseño moderno y elegante.</p>
+        <p class="precio">$350.000</p>
+        <a href="#contacto" class="boton-producto">
+            Consultar producto
+        </a>
+    </div>
+</article>
+
+<!-- Sony WH-CH520 -->
+<article class="producto-card">
+    <img
+        src="assets/img/sony-wh-ch520.jpg"
+        alt="Auriculares Sony WH-CH520"
+    >
+
+    <div class="producto-info">
+        <h3>Sony WH-CH520</h3>
+        <p>Auriculares inalámbricos ligeros para el uso cotidiano.</p>
+        <p class="precio">$80.000</p>
+        <a href="#contacto" class="boton-producto">
+            Consultar producto
+        </a>
+    </div>
+</article>
+
+    </div>
+        </section>
+
+
            <!-- Galería de auriculares -->
-            <section id="galeria">
-                <h2>Nuestra galería</h2>
-            </section>
+           <section id="galeria">
+    <h2>Nuestra galería</h2>
+
+    <p>Descubrí auriculares para cada estilo.</p>
+
+    <div class="galeria-container">
+
+        <img src="assets/img/soundcore-liberty-5.jpg"
+             alt="Soundcore Liberty 5">
+
+        <img src="assets/img/redmi-buds-6.jpg"
+             alt="Redmi Buds 6">
+
+        <img src="assets/img/beats-studio-pro.jpg"
+             alt="Beats Studio Pro">
+
+        <img src="assets/img/sony-wh-ch520.jpg"
+             alt="Sony WH-CH520">
+
+        <img src="assets/img/soundcore-space-one.jpg"
+             alt="Soundcore Space One">
+
+        <img src="assets/img/redmi-buds-6-active.jpg"
+             alt="Redmi Buds 6 Active">
+
+        <img src="assets/img/beats-solo-4.jpg"
+             alt="Beats Solo 4">
+
+        <img src="assets/img/galaxy-buds-fe.jpg"
+             alt="Samsung Galaxy Buds FE">
+
+    </div>
+</section>
             <!-- Formulario de contacto -->
              <section id="contacto">
-                  <h2>Contactanos</h2>
-             </section>
+    <h2>Contactanos</h2>
+
+    <p>¿Tenés dudas sobre algún auricular? Escribinos.</p>
+
+    <form action="#" method="get">
+
+        <!-- Nombre -->
+        <div class="campo-formulario">
+            <label for="nombre">Nombre completo</label>
+            <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Tu nombre"
+                required
+            >
+        </div>
+
+        <!-- Email -->
+        <div class="campo-formulario">
+            <label for="email">Correo electrónico</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="tu@email.com"
+                required
+            >
+        </div>
+
+        <!-- Teléfono -->
+        <div class="campo-formulario">
+            <label for="telefono">Teléfono</label>
+            <input
+                type="tel"
+                id="telefono"
+                name="telefono"
+                placeholder="Tu número de teléfono"
+            >
+        </div>
+
+        <!-- Motivo de consulta -->
+        <div class="campo-formulario">
+            <label for="motivo">Motivo de consulta</label>
+            <select id="motivo" name="motivo" required>
+                <option value="">Seleccioná una opción</option>
+                <option value="producto">Consulta sobre un producto</option>
+                <option value="precio">Consulta sobre precios</option>
+                <option value="garantia">Garantía</option>
+                <option value="otro">Otro motivo</option>
+            </select>
+        </div>
+
+        <!-- Marca de interés -->
+        <fieldset class="campo-formulario">
+            <legend>¿Qué marca te interesa?</legend>
+
+            <label>
+                <input type="radio" name="marca" value="soundcore" required>
+                Soundcore
+            </label>
+
+            <label>
+                <input type="radio" name="marca" value="redmi">
+                Redmi
+            </label>
+
+            <label>
+                <input type="radio" name="marca" value="beats">
+                Beats
+            </label>
+        </fieldset>
+
+        <!-- Comentarios -->
+        <div class="campo-formulario">
+            <label for="comentarios">Comentarios</label>
+            <textarea
+                id="comentarios"
+                name="comentarios"
+                rows="5"
+                placeholder="Escribí tu consulta..."
+            ></textarea>
+        </div>
+
+        <!-- Botones -->
+        <div class="botones-formulario">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+        </div>
+
+    </form>
+</section>
       </main>
        <!-- Pie de página  -->
         <footer>
-             <p>&copy; 2026 AudioHub. Todos los derechos reservados.</p>
+             <p>&copy; 2026 AudioHub. Todos los derechos reservados.
+
+             </p>
+             <p>© 2026 Ciro Lin. Este sitio web fue creado con fines educativos.</p>
         </footer>
 </body> 
  
